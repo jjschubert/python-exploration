@@ -4,6 +4,7 @@ my_name = "Jenni"
 print("Hello and welcome " + my_name + "!")
 print('Hello world!')
 
+## Basic math 
 cars = 100
 space_in_a_car = 4.0
 drivers = 30
@@ -20,7 +21,8 @@ print("We can transport", carpool_capacity, "people today.")
 print("We have", passengers, "to carpool today.")
 print("We need to put about", average_passengers_per_car,
       "in each car.")
-
+      
+## strings with variabls
 my_age = 31
 my_hair = "brown"
 my_height = 70
@@ -29,7 +31,7 @@ print(f"Let's talk about {my_name}.")
 print(f"Her hair is {my_hair}")
 print(f"If I add {my_age} and {my_height} I get {my_age + my_height}")
 
-
+## basic functions
 def loading_screen():
   print('This page is loading . . .')
 
@@ -55,7 +57,7 @@ def create_spreadsheet(title, row_count = 1000):
 
 create_spreadsheet(title='Applications', row_count=10)
 
-#multiple return values
+## multiple return values
 def get_boundaries(target, margin): 
   low_limit = target - margin
   high_limit = margin + target
@@ -76,7 +78,7 @@ song = repeat_stuff(lyrics)
 
 print(song)
 
-#conditional
+## conditional
 def dave_check(user_name):
   if user_name == "Dave":
     return "Get off my computer Dave!"
@@ -89,7 +91,7 @@ user_name = "Jenni"
 
 print(dave_check(user_name))
 
-####zip keyword
+## zip keyword
 names = ['Jenny', 'Alexus', 'Sam', 'Grace']
 dogs_names = ['Elphonse', 'Dr. Doggy DDS', 'Carter', 'Ralph']
 
@@ -97,7 +99,7 @@ names_and_dogs_names = zip(names, dogs_names)
 
 list_of_names_and_dogs_names = print(list(names_and_dogs_names))
 
-####append
+## append
 orders = ['daisies', 'periwinkle']
 
 print(orders)
@@ -106,7 +108,7 @@ orders.append('tulips')
 orders.append('roses')
 print(orders)
 
-####dictionary
+## dictionary
 animals_in_zoo = {}
 
 animals_in_zoo['zebras'] = 8
@@ -121,7 +123,7 @@ print(animals_in_zoo)
 animals_in_zoo['fish'] = 30
 print(animals_in_zoo)
 
-####list comprehension
+##list comprehension
 drinks = ["espresso", "chai", "decaf", "drip"]
 caffeine = [64, 40, 0, 120]
 
@@ -131,19 +133,19 @@ drinks_to_caffeine ={key:value for key, value in zipped_drinks}
 
 print(drinks_to_caffeine)
 
-####for loop
+## for loop
 board_games = ['Settlers of Catan', 'Carcassone', 'Power Grid', 'Agricola', 'Scrabble']
 
 for game in board_games:
   print(game)
 
-####range in loop
+## range in loop
 promise = "I will not chew gum in class"
 
 for i in range(5):
   print(promise)
 
-####append w/ loop
+## append w/ loop
 students_period_A = ["Alex", "Briana", "Cheri", "Daniele"]
 students_period_B = ["Dora", "Minerva", "Alexa", "Obie"]
 
@@ -151,7 +153,7 @@ for student in students_period_A:
   students_period_B.append(student)
   print(student)
 
-####break
+## break
 dog_breeds_available_for_adoption = ['french_bulldog', 'dalmatian', 'shihtzu', 'poodle', 'collie']
 dog_breed_I_want = 'dalmatian'
 
@@ -161,7 +163,7 @@ for dog_breed in dog_breeds_available_for_adoption:
     print("They have the dog I want!")
     break
 
-####continue
+## continue
 ages = [12, 38, 34, 26, 21, 19, 67, 41, 17]
 
 for i in ages:
@@ -169,7 +171,7 @@ for i in ages:
     continue
   print(i)
 
-####while loop
+## while loop
 all_students = ["Alex", "Briana", "Cheri", "Daniele", "Dora", "Minerva", "Alexa", "Obie", "Arius", "Loki"]
 students_in_poetry = []
 
@@ -178,7 +180,7 @@ while len(students_in_poetry) < 6:
 print(students_in_poetry)
 
 
-####fizzBuzz in Python
+## fizzBuzz in Python
 def fizzBuzz(num):
     if num % 15 == 0:
        print('FizzBuzz')
@@ -191,7 +193,7 @@ fizzBuzz(30)
 fizzBuzz(10)
 fizzBuzz(6)
 
-####Dictionary in function
+## Dictionary in function
 def relation_to_luke(name):
 	dict = {
 	'Darth Vader' : 'father',
